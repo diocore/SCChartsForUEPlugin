@@ -15,10 +15,10 @@ typedef struct {
   char _TERM;
   char _pg2;
   char _pg3;
-} TickData;
+} F_TickData;
 
-void reset(TickData* d);
-void logic(TickData* d);
-void tick(TickData* d);
+void F_Reset(F_TickData* d);
+void F_Logic(F_TickData* d);
+void F_Tick(F_TickData* d);
 
 #endif /* !FIRSTSCCHART_H */

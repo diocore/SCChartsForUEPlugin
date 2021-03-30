@@ -14,5 +14,5 @@ public:
 	~FirstSCChartFSM();
 	void Reset();
 	void Tick();
-	TickData tickData = TickData();
+	F_TickData tickData = F_TickData();
 };

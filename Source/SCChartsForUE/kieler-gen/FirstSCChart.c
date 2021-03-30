@@ -7,7 +7,7 @@
 
 #include "FirstSCChart.h"
 
-void logic(TickData* d) {
+void F_Logic(F_TickData* d) {
   d->_g3 = d->_pg2;
   d->_g3 = d->_GO || d->_g3;
   if (d->_g3) {
@@ -19,7 +19,7 @@ void logic(TickData* d) {
   }
 }
 
-void reset(TickData* d) {
+void F_Reset(F_TickData* d) {
   d->_GO = 1;
   d->_TERM = 0;
   d->text = "";
@@ -27,8 +27,8 @@ void reset(TickData* d) {
   d->_pg3 = 0;
 }
 
-void tick(TickData* d) {
-  logic(d);
+void F_Tick(F_TickData* d) {
+  F_Logic(d);
 
   d->_pg2 = d->_g2;
   d->_pg3 = d->_g3;

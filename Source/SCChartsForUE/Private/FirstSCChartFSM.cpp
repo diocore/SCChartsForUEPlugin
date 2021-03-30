@@ -13,9 +13,9 @@ FirstSCChartFSM::~FirstSCChartFSM()
 
 
 void FirstSCChartFSM::Reset() {
-    reset(&tickData);
+    F_Reset(&tickData);
 }
 
 void FirstSCChartFSM::Tick() {
-    tick(&tickData);
+    F_Tick(&tickData);
 }
